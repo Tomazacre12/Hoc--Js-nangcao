@@ -4,6 +4,16 @@ let b = a
 a = 2
 console.log(b)
 
+function sum(f, g){
+    f = 0,
+    g = 0,
+   console.log(f, g)
+}
+const h = 1
+const i = 2
+sum(h, i)
+console.log(h, i)
+
 // reference types
 
 let c = {
@@ -33,12 +43,21 @@ const studentProfile = student.profile
 student.profile.age = '400'
 console.log(student.profile.age)
 
-function sum(f, g){
-     f = 0,
-     g = 0,
-    console.log(f, g)
+function god(obj){
+    obj.name = 'Beelzebub'
+    console.log(obj)
 }
-const h = 1
-const i = 2
-sum(h, i)
-console.log(h, i)
+const j = {
+    name: 'Poseidon'
+}
+god(j)
+console.log(j)
+
+const k = {
+    num: 1
+}
+const l = {
+    num: 1
+}
+console.log(k === l)
+
