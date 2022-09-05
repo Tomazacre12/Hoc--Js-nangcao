@@ -52,3 +52,9 @@ function Parrot(){
 }
 const conVet = new Parrot('Vet', 300)
 console.log(conVet)
+
+function fn(){}
+
+fn.bind === Function.prototype.bind //true
+fn.call === Function.prototype.call //true
+fn.apply === Function.prototype.apply //true
